@@ -83,7 +83,6 @@ export const LanguageProvider = ({ children }) => {
       agendarCita: 'Agendar Cita',
 
       // Footer
-      logoSubtext: 'Cirugía & Medicina Estética',
       copyright: '© 2024 Todos los derechos reservados. Política de Privacidad'
     },
     en: {
@@ -151,8 +150,7 @@ export const LanguageProvider = ({ children }) => {
       agendarCita: 'Schedule Appointment',
 
       // Footer
-      logoSubtext: 'Surgery & Aesthetic Medicine',
-      copyright: '© 2024 Todos los derechos reservados. Política de Privacidad'
+      copyright: '© 2025 All rights reserved. Privacy Policy'
     }
   }
 
