@@ -83,7 +83,7 @@ export const LanguageProvider = ({ children }) => {
       agendarCita: 'Agendar Cita',
 
       // Footer
-      copyright: '© 2024 Todos los derechos reservados. Política de Privacidad'
+      copyright: '© 2025 Todos los derechos reservados. Política de Privacidad'
     },
     en: {
       // Header
