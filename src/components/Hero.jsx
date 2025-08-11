@@ -55,13 +55,13 @@ const Hero = () => {
           </div>
 
           {/* Main Headline - Exact color #181919 */}
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold mb-6 leading-tight" style={{ color: '#181919' }}>
+          <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl mb-6 leading-tight" style={{ color: '#181919' }}>
             <span className="block mb-2">{t('titulo').split(' ')[0]} {t('titulo').split(' ')[1]}</span>
             <span className="block">{t('titulo').split(' ').slice(2).join(' ')}</span>
           </h1>
 
           {/* Description - Exact color #181919 */}
-          <p className="text-lg sm:text-xl lg:text-2xl mb-8 leading-relaxed max-w-2xl font-light" style={{ color: '#181919' }}>
+          <p className="text-lg sm:text-xl lg:text-2xl mb-8 leading-relaxed max-w-2xl font-light" style={{ color: '#181919', textWrap: 'balance' }}>
             {t('descripcion')}
           </p>
 

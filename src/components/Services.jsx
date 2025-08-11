@@ -1,72 +1,134 @@
+import { useState } from 'react'
+import { useLanguage } from '../contexts/LanguageContext'
+import ServiceModal from './ServiceModal'
+
 const Services = () => {
-  const services = [
+  const { t } = useLanguage()
+  const [selectedService, setSelectedService] = useState(null)
+  const [showAllServices, setShowAllServices] = useState(false)
+
+  const initialServices = [
     {
       id: 1,
-      title: "Hilos Tensores",
-      description: "Tratamiento de lifting facial con hilos tensores para rejuvenecimiento natural",
-      image: "https://images.unsplash.com/photo-1559839734-2b71ea197ec2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80"
+      title: t('hilosTensores'),
+      description: t('hilosDescripcion'),
+      image: "/images/hilos-tensores.webp",
+      detailedDescription: t('hilosDescripcion')
     },
     {
       id: 2,
-      title: "Plasma Rico En Plaquetas",
-      description: "Tratamiento regenerativo con plasma rico en plaquetas para la piel",
-      image: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80"
+      title: t('plasmaRico'),
+      description: t('plasmaDescripcion'),
+      image: "/images/plasma.webp",
+      detailedDescription: t('plasmaDescripcion')
     },
     {
       id: 3,
-      title: "Rellenos",
-      description: "Rellenos dérmicos para restaurar volumen y suavizar arrugas",
-      image: "https://images.unsplash.com/photo-1582750433449-648ed127bb54?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80"
+      title: t('rellenos'),
+      description: t('rellenosDescripcion'),
+      image: "/images/relleno.webp",
+      detailedDescription: t('rellenosDescripcion')
+    },
+    {
+      id: 4,
+      title: t('verrugasTitulo'),
+      description: t('verrugasDescripcion'),
+      image: "/images/verrugas.webp",
+      detailedDescription: t('verrugasDescripcion')
     }
   ]
 
+  const allServices = [
+    ...initialServices,
+    {
+      id: 5,
+      title: "Limpieza Facial",
+      description: "Tratamiento profundo para limpiar y rejuvenecer la piel",
+      image: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80",
+      detailedDescription: "La limpieza facial profunda elimina impurezas y células muertas para una piel más radiante."
+    },
+    {
+      id: 6,
+      title: "Peeling Químico",
+      description: "Renovación celular para una piel más joven y saludable",
+      image: "https://images.unsplash.com/photo-1582750433449-648ed127bb54?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80",
+      detailedDescription: "El peeling químico estimula la renovación celular para una piel más joven y uniforme."
+    }
+  ]
+
+  const servicesToShow = showAllServices ? allServices : initialServices
+
+  const handleServiceClick = (service) => {
+    setSelectedService(service)
+  }
+
+  const closeModal = () => {
+    setSelectedService(null)
+  }
+
   return (
-    <section id="servicios" className="section-padding bg-white">
+    <section id="servicios" className="py-20 bg-white">
       <div className="container-custom">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-6">
-            Medicina Estética
+        {/* Header Section - Left aligned like in screenshot */}
+        <div className="mb-20 max-w-4xl">
+          <h2 className="text-3xl md:text-3xl lg:text-3xl text-gray-900 mb-4 leading-tight">
+            {t('serviciosTitulo')}
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-            La medicina estética es una rama de la medicina que se enfoca en el equilibrio entre salud y belleza, 
-            utilizando enfoques terapéuticos seguros para lograr una apariencia más joven y mejorar la calidad de vida, 
-            sin limitar las actividades diarias.
+          <p className="text-xl md:text-xl text-gray-700 leading-relaxed font-light" style={{ maxWidth: '40rem', textWrap: 'balance' }}>
+            {t('serviciosDescripcion')}
           </p>
         </div>
 
-        {/* Services Grid */}
-        <div className="grid md:grid-cols-3 gap-8 mb-12">
-          {services.map((service) => (
-            <div key={service.id} className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
-              <div className="h-64 bg-gray-200 relative">
-                <img 
-                  src={service.image} 
-                  alt={service.title}
-                  className="w-full h-full object-cover"
-                />
+        {/* Services Grid - 2 columns on mobile, 4 columns on desktop */}
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-6 mb-12">
+          {servicesToShow.map((service) => (
+            <div key={service.id} className="group">
+              {/* Rounded Image Container */}
+              <div className="relative mb-4">
+                <div className="h-48 lg:h-64 bg-gray-200 rounded-2xl lg:rounded-3xl overflow-hidden">
+                  <img 
+                    src={service.image} 
+                    alt={service.title}
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                  />
+                  
+                  {/* "Conoce más" Button - Inside the image */}
+                  <button
+                    onClick={() => handleServiceClick(service)}
+                    className="absolute bottom-2 lg:bottom-4 right-2 lg:right-4 bg-white/90 backdrop-blur-sm text-gray-800 px-2 lg:px-4 py-1 lg:py-2 rounded-lg lg:rounded-xl text-sm lg:text-base font-medium hover:bg-white transition-all duration-200 shadow-lg"
+                  >
+                    {t('conoceMas')}
+                  </button>
+                </div>
               </div>
-              <div className="p-6">
-                <h3 className="text-xl font-semibold text-gray-800 mb-3">
+              
+              {/* Title below image - No background */}
+              <div className="text-center">
+                <h3 className="text-sm lg:text-lg font-semibold text-gray-900">
                   {service.title}
                 </h3>
-                <p className="text-gray-600 mb-4">
-                  {service.description}
-                </p>
-                <button className="btn-primary w-full">
-                  Conoce más
-                </button>
               </div>
             </div>
           ))}
         </div>
 
-        {/* All Services Button */}
+        {/* Show More/Less Services Button */}
         <div className="text-center">
-          <button className="btn-secondary text-lg px-8 py-4">
-            Todos Nuestros Servicios
+          <button 
+            onClick={() => setShowAllServices(!showAllServices)}
+            className="bg-gray-900 hover:bg-gray-800 text-white font-semibold px-8 py-4 rounded-xl shadow-lg hover:shadow-xl transition-all duration-200 transform hover:-translate-y-0.5"
+          >
+            {showAllServices ? 'Mostrar Menos' : t('todosServicios')}
           </button>
         </div>
       </div>
+
+      {/* Service Modal */}
+      <ServiceModal 
+        isOpen={!!selectedService} 
+        onClose={closeModal} 
+        service={selectedService} 
+      />
     </section>
   )
 }
