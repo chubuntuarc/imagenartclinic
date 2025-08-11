@@ -66,7 +66,21 @@ export const LanguageProvider = ({ children }) => {
       
       // Testimonials
       testimonioSebastian: '200% recomendado, calidad de primera sumamente profesionales, manejan una línea natural donde nadie externo sabrá si te hiciste algo o no, Gracias!',
-      testimonioKarla: 'No los cambio por nada. Siempre superan mis expectativas con la mejor atención, calidad de sus productos y los mejores tratamientos en la manera más natural posible. Mis viajes a Tijuana son de cita obligatoria a Imagen Art 😊'
+      testimonioKarla: 'No los cambio por nada. Siempre superan mis expectativas con la mejor atención, calidad de sus productos y los mejores tratamientos en la manera más natural posible. Mis viajes a Tijuana son de cita obligatoria a Imagen Art 😊',
+
+      // Contact
+      contacto: 'Contacto',
+      direccion: 'Dirección',
+      direccionCompleta: 'Blvd. Agua Caliente 11300-227, Plaza Campestre Colonia Aviación, Tijuana, B.C.N, México 22014',
+      telefonos: 'Teléfonos',
+      telefonoUSA: 'USA +1 (619) 713 7193',
+      telefonoMexico: 'México +52 (664) 290 1000',
+      correo: 'Correo',
+      email: 'info@imagenartclinic.com',
+      horarios: 'Horarios',
+      horarioLunesViernes: 'Lunes – Viernes 9:00am – 7:00pm',
+      horarioSabados: 'Sábados 8:00am – 4:00pm',
+      agendarCita: 'Agendar Cita'
     },
     en: {
       // Header
@@ -116,7 +130,21 @@ export const LanguageProvider = ({ children }) => {
       
       // Testimonials
       testimonioSebastian: '200% recommended, extremely professional quality, they maintain a natural line where no one outside will know if you did something or not, Thank you!',
-      testimonioKarla: 'I wouldn\'t change them for anything. They always exceed my expectations with the best attention, quality of their products and the best treatments in the most natural way possible. My trips to Tijuana are mandatory appointments at Imagen Art 😊'
+      testimonioKarla: 'I wouldn\'t change them for anything. They always exceed my expectations with the best attention, quality of their products and the best treatments in the most natural way possible. My trips to Tijuana are mandatory appointments at Imagen Art 😊',
+
+      // Contact
+      contacto: 'Contact',
+      direccion: 'Address',
+      direccionCompleta: 'Blvd. Agua Caliente 11300-227, Plaza Campestre Colonia Aviación, Tijuana, B.C.N, Mexico 22014',
+      telefonos: 'Phones',
+      telefonoUSA: 'USA +1 (619) 713 7193',
+      telefonoMexico: 'Mexico +52 (664) 290 1000',
+      correo: 'Email',
+      email: 'info@imagenartclinic.com',
+      horarios: 'Hours',
+      horarioLunesViernes: 'Monday – Friday 9:00am – 7:00pm',
+      horarioSabados: 'Saturdays 8:00am – 4:00pm',
+      agendarCita: 'Schedule Appointment'
     }
   }
 
