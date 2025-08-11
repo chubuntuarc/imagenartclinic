@@ -47,10 +47,16 @@ export const LanguageProvider = ({ children }) => {
       plasmaDescripcion: 'Tratamiento regenerativo con plasma rico en plaquetas para la piel. Estimula la producción de colágeno y elastina para una piel más joven y saludable.',
       rellenos: 'Rellenos',
       rellenosDescripcion: 'Rellenos dérmicos para restaurar volumen y suavizar arrugas. Utilizamos productos de alta calidad para resultados naturales y duraderos.',
-      verrugasTitulo: 'Retiro de Verrugas',
-      verrugasDescripcion: 'Tratamiento para reducir arrugas y líneas de expresión',
-      limpiezaTitulo: 'Limpieza Facial',
-      limpiezaDescripcion: 'Tratamiento profundo para limpiar y rejuvenecer la piel',
+      verrugasTitulo: 'Tratamiento de Verrugas',
+      verrugasDescripcion: 'Eliminación efectiva de verrugas con técnicas avanzadas y seguras para una piel más saludable y uniforme.',
+
+      // Doctors
+      draMileidy: 'Dra. Mileidy Fernández Ribot',
+      draMileidyEspecialidad: 'Medicina estética y anestesiología',
+      draMileidyBio: 'De nacionalidad cubana, especialidades en Medicina Familiar y Anestesiología del ISCM Villa Clara, Cuba; Diplomado en Medicina Estética por la Universidad Autónoma de México (UNAM). Licencia profesional No. 6673854',
+      drSaul: 'Dr. Saúl León Galindo',
+      drSaulEspecialidad: 'Medicina estética',
+      drSaulBio: 'De nacionalidad cubana, especialidades en Medicina Familiar y Anestesiología del ISCM Villa Clara, Cuba; Diplomado en Medicina Estética por la Universidad Autónoma de México (UNAM). Licencia profesional No. 6673854'
     },
     en: {
       // Header
@@ -81,10 +87,16 @@ export const LanguageProvider = ({ children }) => {
       plasmaDescripcion: 'Regenerative treatment with platelet-rich plasma for the skin. Stimulates the production of collagen and elastin for younger and healthier skin.',
       rellenos: 'Fillers',
       rellenosDescripcion: 'Dermal fillers to restore volume and smooth wrinkles. We use high-quality products for natural and long-lasting results.',
-      verrugasTitulo: 'Wart Removal',
-      verrugasDescripcion: 'Treatment to reduce wrinkles and expression lines',
-      limpiezaTitulo: 'Facial Cleansing',
-      limpiezaDescripcion: 'Deep treatment to clean and rejuvenate the skin'
+      verrugasTitulo: 'Wart Treatment',
+      verrugasDescripcion: 'Effective wart removal with advanced and safe techniques for healthier and more uniform skin.',
+
+      // Doctors
+      draMileidy: 'Dr. Mileidy Fernández Ribot',
+      draMileidyEspecialidad: 'Aesthetic medicine and anesthesiology',
+      draMileidyBio: 'Cuban nationality, specialties in Family Medicine and Anesthesiology from ISCM Villa Clara, Cuba; Diploma in Aesthetic Medicine from the National Autonomous University of Mexico (UNAM). Professional license No. 6673854',
+      drSaul: 'Dr. Saúl León Galindo',
+      drSaulEspecialidad: 'Aesthetic medicine',
+      drSaulBio: 'Cuban nationality, specialties in Family Medicine and Anesthesiology from ISCM Villa Clara, Cuba; Diploma in Aesthetic Medicine from the National Autonomous University of Mexico (UNAM). Professional license No. 6673854'
     }
   }
 
