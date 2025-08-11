@@ -80,7 +80,11 @@ export const LanguageProvider = ({ children }) => {
       horarios: 'Horarios',
       horarioLunesViernes: 'Lunes – Viernes 9:00am – 7:00pm',
       horarioSabados: 'Sábados 8:00am – 4:00pm',
-      agendarCita: 'Agendar Cita'
+      agendarCita: 'Agendar Cita',
+
+      // Footer
+      logoSubtext: 'Cirugía & Medicina Estética',
+      copyright: '© 2024 Todos los derechos reservados. Política de Privacidad'
     },
     en: {
       // Header
@@ -144,7 +148,11 @@ export const LanguageProvider = ({ children }) => {
       horarios: 'Hours',
       horarioLunesViernes: 'Monday – Friday 9:00am – 7:00pm',
       horarioSabados: 'Saturdays 8:00am – 4:00pm',
-      agendarCita: 'Schedule Appointment'
+      agendarCita: 'Schedule Appointment',
+
+      // Footer
+      logoSubtext: 'Surgery & Aesthetic Medicine',
+      copyright: '© 2024 Todos los derechos reservados. Política de Privacidad'
     }
   }
 
