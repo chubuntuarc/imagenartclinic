@@ -5,20 +5,23 @@ import Doctors from './components/Doctors'
 import About from './components/About'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
+import { LanguageProvider } from './contexts/LanguageContext'
 
 function App() {
   return (
-    <div className="min-h-screen bg-white">
-      <Header />
-      <main>
-        <Hero />
-        <Services />
-        <Doctors />
-        <About />
-        <Contact />
-      </main>
-      <Footer />
-    </div>
+    <LanguageProvider>
+      <div className="min-h-screen bg-white">
+        <Header />
+        <main>
+          <Hero />
+          <Services />
+          <Doctors />
+          <About />
+          <Contact />
+        </main>
+        <Footer />
+      </div>
+    </LanguageProvider>
   )
 }
 
