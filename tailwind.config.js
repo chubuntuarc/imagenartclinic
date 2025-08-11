@@ -6,18 +6,32 @@ export default {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        sans: ['Creato Display', 'serif'],
+        serif: ['Creato Display', 'serif'],
+        display: ['Creato Display', 'serif'],
+      },
+      fontWeight: {
+        thin: '100',
+        light: '300',
+        normal: '400',
+        medium: '500',
+        bold: '700',
+        extrabold: '800',
+        black: '900',
+      },
       colors: {
         primary: {
-          50: '#fef7f0',
-          100: '#fdecd8',
-          200: '#fbd5b0',
-          300: '#f8b77d',
-          400: '#f5934a',
-          500: '#f27522',
-          600: '#e35d1a',
-          700: '#bc4518',
-          800: '#96381b',
-          900: '#7a311a',
+          50: '#fef7ed',
+          100: '#fdedd4',
+          200: '#fbd7a9',
+          300: '#f8bb72',
+          400: '#f5953a',
+          500: '#f27511',
+          600: '#e35a06',
+          700: '#bc4406',
+          800: '#95360c',
+          900: '#782e0d',
         },
         gray: {
           50: '#f9fafb',
@@ -35,10 +49,6 @@ export default {
           button: '#FBE3CA',
           text: '#181919',
         }
-      },
-      fontFamily: {
-        sans: ['Creato Display', 'serif'],
-        serif: ['Creato Display', 'serif'],
       },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
