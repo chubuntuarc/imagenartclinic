@@ -56,7 +56,17 @@ export const LanguageProvider = ({ children }) => {
       draMileidyBio: 'De nacionalidad cubana, especialidades en Medicina Familiar y Anestesiología del ISCM Villa Clara, Cuba; Diplomado en Medicina Estética por la Universidad Autónoma de México (UNAM). Licencia profesional No. 6673854',
       drSaul: 'Dr. Saúl León Galindo',
       drSaulEspecialidad: 'Medicina estética',
-      drSaulBio: 'De nacionalidad cubana, especialidades en Medicina Familiar y Anestesiología del ISCM Villa Clara, Cuba; Diplomado en Medicina Estética por la Universidad Autónoma de México (UNAM). Licencia profesional No. 6673854'
+      drSaulBio: 'De nacionalidad cubana, especialidades en Medicina Familiar y Anestesiología del ISCM Villa Clara, Cuba; Diplomado en Medicina Estética por la Universidad Autónoma de México (UNAM). Licencia profesional No. 6673854',
+
+      // About
+      sobreImagenArt: 'ImagenArt',
+      sobreImagenArtDescripcion1: 'ImagenArt es una clínica de Medicina Estética, parte de una empresa llamada Clínica GEN S de RL de CV. Somos un equipo de médicos profesionales especializados en la salud, la belleza, el cuidado de la piel y el rejuvenecimiento facial.',
+      sobreImagenArtDescripcion2: 'Llevamos más de 15 años preparándonos y actualizándonos para crear obras únicas y genuinas para nuestros pacientes, que los inspiren y emocionen al verse en el espejo, que sean coherentes y comuniquen efectivamente sus emociones.',
+      sobreImagenArtDescripcion3: 'En ImagenArt combinamos creatividad con productos premium y una técnica de aplicación impecable que garantiza tu seguridad, reflejando además nuestra visión y talento. Somos un equipo de médicos estéticos que busca superar tus expectativas y dejar una huella en quienes nos conocen.',
+      
+      // Testimonials
+      testimonioSebastian: '200% recomendado, calidad de primera sumamente profesionales, manejan una línea natural donde nadie externo sabrá si te hiciste algo o no, Gracias!',
+      testimonioKarla: 'No los cambio por nada. Siempre superan mis expectativas con la mejor atención, calidad de sus productos y los mejores tratamientos en la manera más natural posible. Mis viajes a Tijuana son de cita obligatoria a Imagen Art 😊'
     },
     en: {
       // Header
@@ -96,7 +106,17 @@ export const LanguageProvider = ({ children }) => {
       draMileidyBio: 'Cuban nationality, specialties in Family Medicine and Anesthesiology from ISCM Villa Clara, Cuba; Diploma in Aesthetic Medicine from the National Autonomous University of Mexico (UNAM). Professional license No. 6673854',
       drSaul: 'Dr. Saúl León Galindo',
       drSaulEspecialidad: 'Aesthetic medicine',
-      drSaulBio: 'Cuban nationality, specialties in Family Medicine and Anesthesiology from ISCM Villa Clara, Cuba; Diploma in Aesthetic Medicine from the National Autonomous University of Mexico (UNAM). Professional license No. 6673854'
+      drSaulBio: 'Cuban nationality, specialties in Family Medicine and Anesthesiology from ISCM Villa Clara, Cuba; Diploma in Aesthetic Medicine from the National Autonomous University of Mexico (UNAM). Professional license No. 6673854',
+
+      // About
+      sobreImagenArt: 'ImagenArt',
+      sobreImagenArtDescripcion1: 'ImagenArt es una clínica de Medicina Estética, parte de una empresa llamada Clínica GEN S de RL de CV. Somos un equipo de médicos profesionales especializados en la salud, la belleza, el cuidado de la piel y el rejuvenecimiento facial.',
+      sobreImagenArtDescripcion2: 'Llevamos más de 15 años preparándonos y actualizándonos para crear obras únicas y genuinas para nuestros pacientes, que los inspiren y emocionen al verse en el espejo, que sean coherentes y comuniquen efectivamente sus emociones.',
+      sobreImagenArtDescripcion3: 'En ImagenArt combinamos creatividad con productos premium y una técnica de aplicación impecable que garantiza tu seguridad, reflejando además nuestra visión y talento. Somos un equipo de médicos estéticos que busca superar tus expectativas y dejar una huella en quienes nos conocen.',
+      
+      // Testimonials
+      testimonioSebastian: '200% recommended, extremely professional quality, they maintain a natural line where no one outside will know if you did something or not, Thank you!',
+      testimonioKarla: 'I wouldn\'t change them for anything. They always exceed my expectations with the best attention, quality of their products and the best treatments in the most natural way possible. My trips to Tijuana are mandatory appointments at Imagen Art 😊'
     }
   }
 
